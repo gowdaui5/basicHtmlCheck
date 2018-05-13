@@ -1,0 +1,17 @@
+			label {
+			    color: blue;
+			    font-size: 14px;
+			}
+			
+			.liCss {
+			    color: white;
+			    background-color: red;
+			}
+			
+			#idHead {
+			    color: green;
+			}
+			
+			#idLi {
+			    background-color: green;
+			}
