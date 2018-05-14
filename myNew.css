@@ -9,28 +9,55 @@
 			    background-color: red;
 			}
 			
-			#idHead {
-			    color: green;
+			a {
+			    text-decoration: none;
 			}
 			
-			#idLi {
-			    background-color: green;
-			    border: 2px dotted red;
-			    width: 250px;
-			    float: none;
+			#idHead {
+			    color: green;
 			}
 			
 			#idSp {
 			    float: left;
 			    border: 3px solid black;
 			    list-style: none;
+			    margin: 3px;
+			    padding: 5px;
+			    border-collapse: collapse;
+			    background-color: orange;
+			}
+			
+			#idSp:hover {
+			    background-color: white;
+			}
+			
+			#idLi {
+			    clear: both;
+			}
+			
+			tr:nth-child(even) {
+			    background: yellow;
+			}
+			
+			tr:nth-child(odd) {
+			    background: gray;
+			}
+			
+			tr:nth-child(1) {
+			    background: white;
 			}
 			
 			td,
+			tr,
+			table,
 			th {
-			    border: 2px orange dotted;
+			    border: 2px solid dotted;
 			}
 			
 			.baseClass {
 			    background-color: aqua;
+			}
+			
+			td:hover {
+			    background-color: white;
 			}
