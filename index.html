@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="/myNew.css">
 	</head>
 	<body class="baseClass">
+		<button press="onPress">press me</button>
 		<h1 id="idHead" style="text-align:center"><em>SAP UI5/FIORI Consultant</em></h1>
 		<div>
 		<label><b>Name</b></label> 
@@ -68,9 +69,22 @@
 				<lable>First Name</lable>
 				<input><br>
 				<lable>Password</lable>
-				<input type="password"><br>
-				<button>submit</button>
+				<input id="idPas" type="password"><br>
+				<button press="onPress">submit</button>
 			</form>
+		</div>
+		
+		<div>
+			<table>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+				</tr>
+				<tr>
+					<td id="idFirst"><input></td>
+					<td id="idSecond"><input></td>
+				</tr>
+			</table>
 		</div>
 
 	</body>
