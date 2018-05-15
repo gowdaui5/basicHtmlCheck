@@ -3,11 +3,59 @@
 	<head>
 		<meta author="Srinivas">
 		<link rel="stylesheet" href="/myNew.css">
+		<script>
+			function addRow(){
+     			var oF = document.getElementById("fst").value;
+				var oS = document.getElementById("scd").value;
+
+				var oTab = document.getElementById("rowId");
+				var oRow = oTab.insertRow(-1);
+				var oCell1 = oRow.insertCell(0);
+				var oCell2 = oRow.insertCell(1);
+				oCell1.innerHTML = oF;
+				oCell2.innerHTML = oS;
+				oF.reset();
+				oS.reset();
+			}
+			function onDelete(){
+				var oR = document.getElementById("rowId");
+				for(i=0; i<oR.rows.length; i++){
+					var Cells = oR.rows[i].cells;
+					if ( Cells[0].innerText === "Srini" ){
+						oR.deleteRow(i);
+					}
+				}
+			
+			}
+		</script>
 	</head>
 	<body class="baseClass">
 		<button press="onPress">press me</button>
 		<h1 id="idHead" style="text-align:center"><em>SAP UI5/FIORI Consultant</em></h1>
 		<div>
+			
+		<div>
+			<lable>First Name</lable><input id="fst">
+			<lable>Last Name</lable><input id="scd">
+			<button onclick="addRow()">add</button>
+		</div>
+		<div>
+			<table id="rowId">
+				<tr>
+					<th>
+						<lable>First Name</lable>
+					</th>
+					<th><lable>Last Name</lable></th>
+				</tr>
+				<tr id="rowD">
+					<td id="fsD"></td>
+					<td id="scD"></td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<button onclick="onDelete()">Delete Row</button>
+		</div>
 		<label><b>Name</b></label> 
 		<text>Srinivasa Hogarehalli Ramesha</text>
 		<label><b>Mail ID</b></label>
